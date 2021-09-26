@@ -1,0 +1,20 @@
+import React, { Component } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import './Animations/Transitions.css';
+class addOnAnimations extends Component {
+    render() {
+        return (
+            <ReactCSSTransitionGroup
+                transitionName = 'fade'
+                transitionAppear
+                transitionAppearTimeout = {1000}
+            >
+            <div>
+                <h1>React Commponent Fade in!</h1>
+            </div>
+            </ReactCSSTransitionGroup>
+        );
+    }
+}
+
+export default addOnAnimations;
